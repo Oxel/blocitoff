@@ -23,9 +23,26 @@ Things you may want to cover:
 
 * Gemfiles Installed
 	
-	- Rspec Sep 29, 2014
-	- Heroku Sep 29, 2014
-
+	- Rspec ~ Sep 29, 2014
+	- Heroku ~ Sep 29, 2014
+	- Capybara ~ Sep 29, 2014
+	- Binding of Caller ~ Sep 29, 2014
+	- Better Errors ~ Sep 29, 2014
+	- Bootstrap Sass ~ Sep 29, 2014
+	- Faker ~ Sep 29, 2014
+	- Devise ~ Sep 29, 2014
+	- Pundit ~ Sep 29, 2014
+	- figaro ~ Sep 29, 2014
+	- Simple Form ~ Sep 29, 2014
+	- Red carpet ~ Sep 29, 2014
+	- Carrierwave ~ Sep 29, 2014
+	- mini_magick ~ Sep 29, 2014
+	- fog  ~ Sep 29, 2014
+	- will_paginate ~ Sep 29, 2014
+	- database_cleaner ~ Sep 29, 2014
+	- factory_girl_rails ~ Sep 29, 2014
+	- pry_rails  ~ Sep 29, 2014
+	- newrelic_rpm ~ Sep 29, 2014
 * ...
 
 
