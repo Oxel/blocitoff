@@ -21,6 +21,11 @@ Things you may want to cover:
 
 * Deployment instructions
 
+* Gemfiles Installed
+	
+	- Rspec Sep 29, 2014
+	- Heroku Sep 29, 2014
+
 * ...
 
 
