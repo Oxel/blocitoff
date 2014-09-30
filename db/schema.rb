@@ -11,7 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140929163648) do
+ActiveRecord::Schema.define(version: 20140929201434) do
+
+  create_table "todolists", force: true do |t|
+    t.text     "description"
+    t.integer  "daysleft"
+    t.boolean  "complete"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", force: true do |t|
     t.string   "user_name"

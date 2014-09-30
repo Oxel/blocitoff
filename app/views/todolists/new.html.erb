@@ -1,0 +1,6 @@
+<%= form_for Todolist.new do |form| %>
+	<%= form.text_field :description, placeholder: 'Task Description' %>
+	<%= form.text_field :daysleft, placeholder: 'Days left' %>
+	<%= form.text_field :complete, placeholder: 'Complete' %>
+	<%= form.submit 'Save' %>
+<% end %>
