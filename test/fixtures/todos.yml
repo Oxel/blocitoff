@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  task_description: MyText
+  days_left: 1
+  complete: false
+
+two:
+  task_description: MyText
+  days_left: 1
+  complete: false
