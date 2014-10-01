@@ -7,6 +7,7 @@ feature 'User creates To Do List' do
 			fill_in 'Days left', with: '6'
 			fill_in 'Complete', with: 'false'
 			click_button 'Save'
+			click_on 'New Task'
 				
 
 	end

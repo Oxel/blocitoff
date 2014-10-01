@@ -5,11 +5,15 @@ class TodolistsController < ApplicationController
 
 	def create
 		@todolist = Todolist.new(todolist_params)
+	
 		@todolist.save
 		redirect_to @todolist
 	end
 
 	def show
+		@todolist = Todolist.find(params[:index])
+		@user = User.find(params[:index])
+		id
 	end
 
 	private
