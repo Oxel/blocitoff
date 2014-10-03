@@ -1,0 +1,11 @@
+<h3>All todos</h3>
+
+<% @todos.each do |todo| %>
+  <%= div_for(todo) do %>
+    <p><%= todo.task_description %></p>
+    <p>Due at: <%= todo.due_date.strftime('%A, %b %d') %></p>
+    <%= link_to 'Mark complete' %>
+  <% end %>
+<% end %>
+
+<%= link_to 'New task', new_todo_path %>
