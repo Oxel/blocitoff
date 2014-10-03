@@ -11,31 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141001180500) do
-
-  create_table "todolists", force: true do |t|
-    t.text     "description"
-    t.integer  "daysleft"
-    t.boolean  "complete"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.integer  "user_id"
-  end
+ActiveRecord::Schema.define(version: 20141003150614) do
 
   create_table "todos", force: true do |t|
-    t.text     "task_description"
+    t.text     "description"
     t.integer  "days_left"
-    t.boolean  "complete"
+    t.boolean  "complete",    default: false
     t.datetime "created_at"
     t.datetime "updated_at"
-  end
-
-  create_table "users", force: true do |t|
-    t.string   "user_name"
-    t.string   "user_email"
-    t.string   "user_password"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.date     "due_date"
   end
 
 end

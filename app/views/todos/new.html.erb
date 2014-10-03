@@ -1,6 +1,5 @@
 <%= form_for Todo.new do |form| %>
 	<%= form.text_field :task_description, placeholder: 'Task Description' %>
-	<%= form.text_field :days_left, placeholder: 'Days left' %>
-	<%= form.text_field :complete, placeholder: 'false' %>
-		<%= form.submit 'Save' %>
+	<%= form.date_select :due_date, default: 7.days.from_now, placeholder: 'Duedate' %>
+  <%= form.submit 'Save' %>
 <% end %>

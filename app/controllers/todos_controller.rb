@@ -1,4 +1,9 @@
 class TodosController < ApplicationController
+
+	def index
+	  @todos = Todo.all
+	end
+	
 	
 	def new
 	end
@@ -6,7 +11,7 @@ class TodosController < ApplicationController
 	def create
 		@todo = Todo.new(todo_params)
 		@todo.save
-		redirect_to @todo
+		redirect_to todos_path
 	end
 
 	def show
@@ -16,7 +21,7 @@ class TodosController < ApplicationController
 	private
 
 	def todo_params
-		params.require(:todo).permit(:task_description)
+		params.require(:todo).permit(:task_description, :due_date)
 	end
 
 end
