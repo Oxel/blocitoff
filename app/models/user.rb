@@ -1,5 +1,6 @@
 class User < ActiveRecord::Base
   require 'bcrypt'
+  
   attr_accessor :password
   before_save :encrypt_password
 
